@@ -16,6 +16,7 @@
 		4228EBB81B5FA5C800376BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4228EBB61B5FA5C800376BEF /* LaunchScreen.xib */; };
 		4228EBC41B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4228EBC31B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m */; };
 		4228EBD11B5FAED100376BEF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4228EBD01B5FAED100376BEF /* Person.m */; };
+		4228EBD41B5FE9E900376BEF /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4228EBD31B5FE9E900376BEF /* EditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		4228EBC31B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListiOSSuccentlyTutsTests.m; sourceTree = "<group>"; };
 		4228EBCF1B5FAED100376BEF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
 		4228EBD01B5FAED100376BEF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
+		4228EBD21B5FE9E900376BEF /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		4228EBD31B5FE9E900376BEF /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				4228EBAE1B5FA5C800376BEF /* DetailViewController.h */,
 				4228EBAF1B5FA5C800376BEF /* DetailViewController.m */,
 				4228EBB11B5FA5C800376BEF /* Main.storyboard */,
+				4228EBD21B5FE9E900376BEF /* EditViewController.h */,
+				4228EBD31B5FE9E900376BEF /* EditViewController.m */,
 				4228EBB41B5FA5C800376BEF /* Images.xcassets */,
 				4228EBB61B5FA5C800376BEF /* LaunchScreen.xib */,
 				4228EBA41B5FA5C800376BEF /* Supporting Files */,
@@ -233,6 +238,7 @@
 				4228EBAD1B5FA5C800376BEF /* MasterViewController.m in Sources */,
 				4228EBD11B5FAED100376BEF /* Person.m in Sources */,
 				4228EBA71B5FA5C800376BEF /* main.m in Sources */,
+				4228EBD41B5FE9E900376BEF /* EditViewController.m in Sources */,
 				4228EBB01B5FA5C800376BEF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
