@@ -15,6 +15,7 @@
 		4228EBB51B5FA5C800376BEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4228EBB41B5FA5C800376BEF /* Images.xcassets */; };
 		4228EBB81B5FA5C800376BEF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4228EBB61B5FA5C800376BEF /* LaunchScreen.xib */; };
 		4228EBC41B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4228EBC31B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m */; };
+		4228EBD11B5FAED100376BEF /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4228EBD01B5FAED100376BEF /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		4228EBBD1B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendListiOSSuccentlyTutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4228EBC21B5FA5C800376BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4228EBC31B5FA5C800376BEF /* FriendListiOSSuccentlyTutsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendListiOSSuccentlyTutsTests.m; sourceTree = "<group>"; };
+		4228EBCF1B5FAED100376BEF /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../Person.h; sourceTree = "<group>"; };
+		4228EBD01B5FAED100376BEF /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = ../Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 		4228EBA31B5FA5C800376BEF /* FriendListiOSSuccentlyTuts */ = {
 			isa = PBXGroup;
 			children = (
+				4228EBCF1B5FAED100376BEF /* Person.h */,
+				4228EBD01B5FAED100376BEF /* Person.m */,
 				4228EBA81B5FA5C800376BEF /* AppDelegate.h */,
 				4228EBA91B5FA5C800376BEF /* AppDelegate.m */,
 				4228EBAB1B5FA5C800376BEF /* MasterViewController.h */,
@@ -226,6 +231,7 @@
 			files = (
 				4228EBAA1B5FA5C800376BEF /* AppDelegate.m in Sources */,
 				4228EBAD1B5FA5C800376BEF /* MasterViewController.m in Sources */,
+				4228EBD11B5FAED100376BEF /* Person.m in Sources */,
 				4228EBA71B5FA5C800376BEF /* main.m in Sources */,
 				4228EBB01B5FA5C800376BEF /* DetailViewController.m in Sources */,
 			);
@@ -422,6 +428,7 @@
 				4228EBC91B5FA5C800376BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4228EBCA1B5FA5C800376BEF /* Build configuration list for PBXNativeTarget "FriendListiOSSuccentlyTutsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +437,7 @@
 				4228EBCC1B5FA5C800376BEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
