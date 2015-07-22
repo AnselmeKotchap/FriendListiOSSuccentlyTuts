@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "Person.h"
 
 @interface MasterViewController ()
 
@@ -38,8 +39,17 @@
     if (!self.objects) {
         self.objects = [[NSMutableArray alloc] init];
     }
-    [self.objects insertObject:[NSDate date] atIndex:0];
+    
+    Person *friend = [[Person alloc] init];
+    friend.firstName = @"<First Name>";
+    friend.lastName = @"<last Name>";
+    friend.organization = @"<organization>";
+    friend.phoneNumber = @"<Phone Number>";
+    
+    [self.objects insertObject:friend atIndex:0];
+     
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+     
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -48,8 +58,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = self.objects[indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        Person *friend = self.objects[indexPath.row];
+        [[segue destinationViewController] setDetailItem:friend];
     }
 }
 
@@ -66,8 +76,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    Person *friend = self.objects[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", friend.firstName, friend.lastName];
     return cell;
 }
 
